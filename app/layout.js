@@ -3,7 +3,6 @@ import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import Navbar from "./components/Navbar";
 import { UserProvider } from "./context/UserContext";
-import { ProductProvider } from "./context/ProductContext";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
