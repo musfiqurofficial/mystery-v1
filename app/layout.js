@@ -28,13 +28,11 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <UserProvider>
-          <ProductProvider>
             <Navbar />
             <Toaster position="top-center" reverseOrder={false} />
             <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 py-10">
               {children}
             </div>
-          </ProductProvider>
         </UserProvider>
       </body>
     </html>
