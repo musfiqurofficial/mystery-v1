@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React, { useEffect, useState } from "react";
@@ -177,15 +178,12 @@ const Navbar = () => {
                       role=""
                       className="cursor-pointer border-none"
                     >
-                      <Image
+                      <img
                         src={user.image}
                         alt={user.name}
-                        width={100}
-                        height={100}
                         className="w-14 h-14 object-cover rounded-full border-2"
                       />
                     </div>
-                    {console.log(user.image)}
                     <ul
                       tabIndex={0}
                       className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
